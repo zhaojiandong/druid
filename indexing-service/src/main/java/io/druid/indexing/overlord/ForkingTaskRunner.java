@@ -260,6 +260,7 @@ public class ForkingTaskRunner implements TaskRunner, TaskLogStreamer
 
                             final File taskFile = new File(taskDir, "task.json");
                             final File statusFile = new File(attemptDir, "status.json");
+                            // @annotation-zjd: elog位置 var/druid/task/${id}/log
                             final File logFile = new File(taskDir, "log");
 
                             // time to adjust process holders

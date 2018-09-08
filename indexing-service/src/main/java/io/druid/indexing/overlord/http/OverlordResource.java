@@ -592,6 +592,7 @@ public class OverlordResource
     }
   }
 
+  //@annotation-zjd: IndexTask日志查询入口
   @GET
   @Path("/task/{taskid}/log")
   @Produces("text/plain")

@@ -28,6 +28,7 @@ import io.druid.data.input.InputRow;
 import io.druid.data.input.MapBasedInputRow;
 import io.druid.java.util.common.StringUtils;
 import io.druid.java.util.common.parsers.ParseException;
+import io.druid.java.util.emitter.EmittingLogger;
 import org.joda.time.DateTime;
 
 import java.util.List;
@@ -35,6 +36,7 @@ import java.util.Map;
 
 public class MapInputRowParser implements InputRowParser<Map<String, Object>>
 {
+  EmittingLogger log = new EmittingLogger(MapInputRowParser.class);
   private final ParseSpec parseSpec;
 
   @JsonCreator
@@ -74,7 +76,7 @@ public class MapInputRowParser implements InputRowParser<Map<String, Object>>
     catch (Exception e) {
       throw new ParseException(e, "Unparseable timestamp found!");
     }
-
+    log.info("Extract_Timestamp: " + timestamp.getMillis() + "\t content:" + theMap.toString());
     return ImmutableList.of(new MapBasedInputRow(timestamp.getMillis(), dimensions, theMap));
   }
 

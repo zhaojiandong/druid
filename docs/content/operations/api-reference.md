@@ -557,8 +557,8 @@ druid.query.segmentMetadata.defaultHistory
 Returns the dimensions of the datasource.
 
 <div class="note caution">
-This API is deprecated and will be removed in future releases. Please use [SegmentMetadataQuery](../querying/segmentmetadataquery.html) instead
-which provides more comprehensive information and supports all dataSource types including streaming dataSources. It's also encouraged to use [INFORMATION_SCHEMA tables](../querying/sql.html#retrieving-metadata)
+This API is deprecated and will be removed in future releases. Please use <a href="/querying/segmentmetadataquery.html">SegmentMetadataQuery</a> instead
+which provides more comprehensive information and supports all dataSource types including streaming dataSources. It's also encouraged to use <a href="/querying/sql.html#retrieving-metadata">INFORMATION_SCHEMA tables</a>
 if you're using SQL.
 </div>
 
@@ -567,8 +567,8 @@ if you're using SQL.
 Returns the metrics of the datasource.
 
 <div class="note caution">
-This API is deprecated and will be removed in future releases. Please use [SegmentMetadataQuery](../querying/segmentmetadataquery.html) instead
-which provides more comprehensive information and supports all dataSource types including streaming dataSources. It's also encouraged to use [INFORMATION_SCHEMA tables](../querying/sql.html#retrieving-metadata)
+This API is deprecated and will be removed in future releases. Please use <a href="/querying/segmentmetadataquery.html">SegmentMetadataQuery</a> instead
+which provides more comprehensive information and supports all dataSource types including streaming dataSources. It's also encouraged to use <a href="/querying/sql.html#retrieving-metadata">INFORMATION_SCHEMA tables</a>
 if you're using SQL.
 </div>
 
